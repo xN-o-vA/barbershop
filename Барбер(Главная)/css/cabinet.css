@@ -1,0 +1,102 @@
+#cabinet .menu {
+  position: absolute;
+  width: calc(327px * var(--scale-coefficient));
+  height: 100vh;
+  background-color: #173343;
+  z-index: 1;
+}
+
+#cabinet .menu .banner {
+  width: 100%;
+  height: calc(81px * var(--scale-coefficient));
+  background-color: #132B38;
+}
+
+#cabinet .menu .btns .btn {
+  position: relative;
+  width: 100%;
+  height: calc(70px * var(--scale-coefficient));
+  transition: all 0.3s;
+}
+
+#cabinet .menu .btns .btn img {
+  position: absolute;
+  top: 50%;
+  left: calc(31px * var(--scale-coefficient));
+  transform: translateY(-50%);
+  width: calc(20px * var(--scale-coefficient));
+  height: calc(20px * var(--scale-coefficient));
+}
+
+#cabinet .menu .btns .btn .name {
+  position: absolute;
+  top: 50%;
+  left: calc(78px * var(--scale-coefficient));
+  transform: translateY(-50%);
+  position: absolute;
+  font-weight: 600;
+  font-size: calc(12px * var(--scale-coefficient));
+  color: white;
+  text-transform: uppercase;
+}
+
+#cabinet .menu .btns .btn:hover {
+  cursor: pointer;
+  background-color: #ED6B6A;
+}
+
+#cabinet .content .exit {
+  position: relative;
+  width: 100%;
+  height: calc(80px * var(--scale-coefficient));
+  background: #F7FAFF;
+}
+
+#cabinet .content .exit button {
+  position: absolute;
+  right: 0;
+  border: 0;
+  border-left: 1px solid #DBE7FF;
+  color: #173343;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(12px * var(--scale-coefficient));
+  width: calc(267px * var(--scale-coefficient));
+  height: 100%;
+  outline: none;
+  background-color: #F7FAFF;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+#cabinet .content .exit button svg {
+  position: absolute;
+  fill: #173343;
+  top:  50%;
+  transform: translateY(-50%);
+  width: calc(18px * var(--scale-coefficient));
+  height: calc(18px * var(--scale-coefficient));
+  left: calc(48px * var(--scale-coefficient));
+  transition: 0.2s all;
+}
+
+#cabinet .content .exit button:hover {
+  color: #ED6B6A;
+  border-left: 1px solid #ED6B6A;
+}
+
+#cabinet .content .exit button:hover svg {
+  fill: #ED6B6A;
+}
+
+#cabinet .content .points {
+  margin-left: calc(327px * var(--scale-coefficient));
+}
+
+#cabinet .content .services .title {
+  color: #173343;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(34px * var(--scale-coefficient));
+}
+

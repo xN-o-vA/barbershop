@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cabinet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <div id="main" v-if="show.main">
+    <header>
+      <div class="information">
+        <div class="data" style="left: calc(54px * var(--scale-coefficient));">+7 (495) 023-87-50</div>
+        <div class="data" style="left: calc(209px * var(--scale-coefficient));">info@imena.studios</div>
+        <div class="detach" style="left: calc(388px * var(--scale-coefficient));"></div>
+        <div class="social_network">
+          <svg class="facebook" width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg"><path d="M5.33333 5V3.5C5.33333 2.85 5.49333 2.5 6.61333 2.5H8V0H5.86667C3.2 0 2.13333 1.65 2.13333 3.5V5H0V7.5H2.13333V15H5.33333V7.5H7.68L8 5H5.33333Z"/></svg>
+          <svg class="vk" width="17" height="9" viewBox="0 0 17 9" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.34306 8.94342H9.37378C9.37378 8.94342 9.68299 8.89585 9.8376 8.75314C9.9922 8.61042 9.9922 8.32499 9.9922 8.32499C9.9922 8.32499 9.9922 7.08814 10.6106 6.89785C11.2291 6.70757 12.0536 8.13471 12.8782 8.65799C13.4966 9.08614 13.9605 8.99099 13.9605 8.99099L16.228 8.94342C16.228 8.94342 17.4133 8.89585 16.8465 7.99199C16.7949 7.94442 16.5372 7.37357 15.1458 6.18428C13.7028 4.94742 13.9089 5.18528 15.6096 3.04457C16.6403 1.76014 17.0526 0.998999 16.9495 0.618428C16.8465 0.285428 16.0734 0.380571 16.0734 0.380571H13.4966C13.4966 0.380571 13.2905 0.333 13.1874 0.428142C13.0328 0.523285 12.9813 0.665999 12.9813 0.665999C12.9813 0.665999 12.569 1.665 12.0536 2.52128C10.9198 4.28142 10.456 4.37657 10.3014 4.28143C9.88913 4.04357 9.9922 3.23485 9.9922 2.71157C9.9922 0.998999 10.3014 0.285428 9.42531 0.0951422C9.16763 0.0475708 8.96149 0 8.23999 0C7.31235 0 6.53931 -1.84306e-07 6.12702 0.190285C5.81781 0.333 5.61167 0.618428 5.76628 0.618428C5.92088 0.618428 6.33317 0.713571 6.53931 0.951428C6.74545 1.37957 6.74545 2.09314 6.74545 2.09314C6.74545 2.09314 6.90006 4.13871 6.3847 4.37657C6.02395 4.56685 5.56013 4.18628 4.52942 2.56885C4.01406 1.76014 3.60177 0.808713 3.60177 0.808713C3.60177 0.808713 3.55024 0.618428 3.39563 0.523285C3.24102 0.428143 2.98335 0.380571 2.98335 0.380571H0.561167C0.561167 0.380571 0.200417 0.380571 0.0458095 0.523285C-0.0572619 0.666 0.0458095 0.903856 0.0458095 0.903856C0.0458095 0.903856 1.95263 4.995 4.11713 7.08814C6.12703 9.08614 8.34306 8.94342 8.34306 8.94342V8.94342Z"/></svg>
+          <svg class="instagram" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M6.49825 4.33241C5.30472 4.33241 4.3307 5.30644 4.3307 6.5C4.3307 7.69356 5.30472 8.66759 6.49825 8.66759C7.69179 8.66759 8.6658 7.69356 8.6658 6.5C8.6658 5.30644 7.69179 4.33241 6.49825 4.33241ZM12.9993 6.5C12.9993 5.60239 13.0074 4.71292 12.957 3.81694C12.9066 2.77623 12.6692 1.85261 11.9082 1.0916C11.1456 0.328955 10.2236 0.0931713 9.18289 0.0427622C8.2853 -0.00764684 7.39584 0.000483674 6.49988 0.000483674C5.60229 0.000483674 4.71283 -0.00764684 3.81687 0.0427622C2.77618 0.0931713 1.85258 0.330582 1.09158 1.0916C0.328949 1.85424 0.0931695 2.77623 0.0427614 3.81694C-0.0076467 4.71454 0.000483665 5.60402 0.000483665 6.5C0.000483665 7.39598 -0.0076467 8.28708 0.0427614 9.18306C0.0931695 10.2238 0.330576 11.1474 1.09158 11.9084C1.8542 12.671 2.77618 12.9068 3.81687 12.9572C4.71446 13.0076 5.60391 12.9995 6.49988 12.9995C7.39747 12.9995 8.28693 13.0076 9.18289 12.9572C10.2236 12.9068 11.1472 12.6694 11.9082 11.9084C12.6708 11.1458 12.9066 10.2238 12.957 9.18306C13.009 8.28708 12.9993 7.39761 12.9993 6.5V6.5ZM6.49825 9.83513C4.65266 9.83513 3.16319 8.34562 3.16319 6.5C3.16319 4.65438 4.65266 3.16487 6.49825 3.16487C8.34384 3.16487 9.83332 4.65438 9.83332 6.5C9.83332 8.34562 8.34384 9.83513 6.49825 9.83513ZM9.96991 3.80718C9.539 3.80718 9.19102 3.4592 9.19102 3.02828C9.19102 2.59736 9.539 2.24938 9.96991 2.24938C10.4008 2.24938 10.7488 2.59736 10.7488 3.02828C10.7489 3.1306 10.7289 3.23195 10.6898 3.3265C10.6507 3.42106 10.5933 3.50698 10.521 3.57933C10.4486 3.65169 10.3627 3.70905 10.2681 3.74815C10.1736 3.78725 10.0722 3.80731 9.96991 3.80718V3.80718Z"/></svg>
+          <svg class="youtube" width="16" height="11" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg"><path d="M15.6661 1.71831C15.575 1.38558 15.3964 1.08214 15.1482 0.838375C14.9 0.594608 14.5909 0.41906 14.2518 0.329299C13.0036 6.68179e-08 8 0 8 0C8 0 2.99643 -6.68179e-08 1.74821 0.327548C1.40897 0.417017 1.09969 0.592468 0.851439 0.83628C0.603191 1.08009 0.424713 1.38368 0.333929 1.71656C-6.81196e-08 2.94268 0 5.5 0 5.5C0 5.5 -6.81196e-08 8.05733 0.333929 9.28169C0.517857 9.9578 1.06071 10.4903 1.74821 10.6707C2.99643 11 8 11 8 11C8 11 13.0036 11 14.2518 10.6707C14.9411 10.4903 15.4821 9.9578 15.6661 9.28169C16 8.05733 16 5.5 16 5.5C16 5.5 16 2.94268 15.6661 1.71831ZM6.41071 7.84713V3.15287L10.5536 5.48248L6.41071 7.84713Z"/></svg>
+        </div>
+        <div class="interaction">
+          <div class="btn" v-on:click="setLoginWindow('client_entry')">
+            <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg"><path d="M5.04341 5.56522C6.5802 5.56522 7.82602 4.3194 7.82602 2.78261C7.82602 1.24582 6.5802 0 5.04341 0C3.50662 0 2.2608 1.24582 2.2608 2.78261C2.2608 4.3194 3.50662 5.56522 5.04341 5.56522Z"/><path d="M5.04348 6.95655C2.25804 6.95655 0 9.21459 0 12H10.087C10.087 9.21459 7.82892 6.95655 5.04348 6.95655Z"/></svg>
+            {{ _U('clients_office') }}
+          </div>
+          <div class="btn" v-on:click="setLoginWindow('master')">
+            <svg width="10" height="12" viewBox="0 0 10 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.46281 2.5293C2.84869 2.28851 3.36485 2.39362 3.61567 2.76406L9.03234 10.7639C9.28316 11.1344 9.17367 11.6299 8.78779 11.8707C8.40191 12.1115 7.88576 12.0063 7.63493 11.6359L2.21826 3.63603C1.96744 3.26559 2.07693 2.77009 2.46281 2.5293Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5376 2.5293C7.15171 2.28851 6.63556 2.39362 6.38474 2.76406L0.968069 10.7639C0.717246 11.1344 0.826732 11.6299 1.21262 11.8707C1.5985 12.1115 2.11465 12.0063 2.36548 11.6359L7.78214 3.63603C8.03297 3.26559 7.92348 2.77009 7.5376 2.5293Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2.08333 2.39996C2.31345 2.39996 2.5 2.22088 2.5 1.99997C2.5 1.77906 2.31345 1.59997 2.08333 1.59997C1.85321 1.59997 1.66667 1.77906 1.66667 1.99997C1.66667 2.22088 1.85321 2.39996 2.08333 2.39996ZM2.08333 3.99994C3.23393 3.99994 4.16667 3.10452 4.16667 1.99997C4.16667 0.895416 3.23393 0 2.08333 0C0.93274 0 0 0.895416 0 1.99997C0 3.10452 0.93274 3.99994 2.08333 3.99994Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7.91667 2.39996C8.14679 2.39996 8.33333 2.22088 8.33333 1.99997C8.33333 1.77906 8.14679 1.59997 7.91667 1.59997C7.68655 1.59997 7.5 1.77906 7.5 1.99997C7.5 2.22088 7.68655 2.39996 7.91667 2.39996ZM7.91667 3.99994C9.06726 3.99994 10 3.10452 10 1.99997C10 0.895416 9.06726 0 7.91667 0C6.76607 0 5.83333 0.895416 5.83333 1.99997C5.83333 3.10452 6.76607 3.99994 7.91667 3.99994Z"/></svg>             
+            {{ _U('masters_office') }}
+          </div>
+          <div class="btn">
+            <svg width="10" height="12" viewBox="0 0 10 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.44019H9.02434C9.56299 1.44081 9.99949 1.87266 10 2.4057V11.0345C9.99949 11.5675 9.56299 11.9994 9.02434 12H0.975659C0.437014 11.9994 0.000635193 11.5675 0 11.0345V2.4057C0.000635193 1.87266 0.437014 1.44081 0.975659 1.44019H2V2.67815C2 2.85592 2.14559 2.99999 2.32522 2.99999H7.67478C7.85441 2.99999 8 2.85592 8 2.67815V1.44019ZM8 5H2V6H8V5ZM2 7H8V8H2V7ZM8 9H2V10H8V9Z"/><path d="M7 1.64717C7.00023 1.4564 6.86176 1.28402 6.6486 1.2095L6.23559 1.06472C5.87595 0.938903 5.64259 0.648237 5.64304 0.326534C5.64271 0.146262 5.46543 0.000185848 5.24651 0H4.7536C4.53469 0.000185848 4.35729 0.146262 4.35707 0.326534C4.35752 0.648237 4.12404 0.938903 3.76452 1.06472L3.3514 1.2095C3.13812 1.28402 2.99977 1.4564 3 1.64717V2H7V1.64717Z"/></svg>
+            {{ _U('online_appointment') }}
+          </div>
+        </div>
+        <div class="detach" style="left: calc(1765px * var(--scale-coefficient));"></div>
+        <img :src="language.img" alt="#">
+        <select name="" id="language" v-on:change="setLanguage" v-model="language.name">
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+    <section class="entry">
+      <div class="view">{{ _U('home') }}</div>
+      <h1>{{ _U(words.title) }}</h1>
+      <div class="form">
+        <div class="switching" v-if="loginWindow != 'master'">
+          <div class="switch" style="width: calc(156px * var(--scale-coefficient));" v-bind:class="[loginWindow == 'client_entry' ? 'active' : 'default', 'default']" v-on:click="setLoginWindow('client_entry')">{{ _U('entry') }}</div>
+          <div class="switch" style="width: calc(276px * var(--scale-coefficient));" v-bind:class="[loginWindow == 'client_registration' ? 'active' : 'default', 'default']" v-on:click="setLoginWindow('client_registration')">{{ _U('registration') }}</div>
+        </div>
+        <input v-model="inputs.fullName" v-if="loginWindow == 'client_registration'" class="text" type="text" v-bind:placeholder="_U('full_name')">
+        <input v-model="inputs.email" class="text" type="email" placeholder="Email *">
+        <input v-model="inputs.password" class="text" type="password" v-bind:placeholder="_U('password')">
+        <input v-model="inputs.passwordRepeat" v-if="loginWindow == 'client_registration'" class="text" type="password" v-bind:placeholder="_U('password_repeat')">
+        <div class="checkbox">
+          <input v-model="inputs.remember" type="checkbox" name="horns">
+          <label for="horns">{{ _U('remember') }}</label>
+          <span>{{ _U('password_forgot') }}</span>
+        </div>
+        <div class="information" v-if="loginWindow != 'client_registration'">{{ _U('clarification') }}<span style="color: #ED6B6A;;">{{ _U('clarification_link') }}</span>.</div>
+        <button v-on:click="cabinetEntrance">{{ _U(words.login_button) }}</button>
+      </div>
+    </section>
+    <footer>
+      <span>© Imena Studios 2019 | Все права защищены</span>
+      <span>Политика конфиденциальности</span>
+      <span>Разработано атаман</span>
+    </footer>
+  </div>
+  <div id="cabinet" v-if="show.cabinet">
+    <section class="menu">
+      <div class="banner"></div>
+      <div class="btns">
+        <div class="btn" v-for="i in menu" v-on:click="sectionOpen(i.type)">
+          <img :src="i.img" alt="#">
+          <div class="name">{{ i.name }}</div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="exit">
+        <button> 
+          <svg viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.9 0.9 0 2 0H10V2H2V16H10V18H2C0.9 18 0 17.1 0 16V2ZM14.176 8L11.64 5.464L13.054 4.05L18.004 9L13.054 13.95L11.64 12.536L14.176 10H7.59V8H14.176Z"/></svg> 
+          Выйти из кабинета
+        </button>
+      </div>
+      <div class="points">
+        <div class="services" v-if="current_type == 'services'">
+          <div class="title"></div>
+          арфыгаишыгшпаш</div>
+      </div>
+    </section>
+  </div>
+  <script src="js/languages.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cabinet.js"></script>
+</body>
+</html>
